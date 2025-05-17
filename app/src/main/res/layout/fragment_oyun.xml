@@ -22,18 +22,17 @@
 
     <ImageView
         android:id="@+id/ivOyun"
-        android:layout_width="279dp"
-        android:layout_height="157dp"
+        android:layout_width="149dp"
+        android:layout_height="212dp"
         android:src="@drawable/oyun1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbarOyun"
-        app:layout_constraintVertical_bias="0.027" />
+        app:layout_constraintVertical_bias="0.032" />
 
     <TextView
-        android:id="@+id/tvOyunAd"
+        android:id="@+id/textViewAd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Fifa 24"
@@ -41,8 +40,8 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivOyun"
-        app:layout_constraintVertical_bias="0.065" />
+        app:layout_constraintVertical_bias="0.03" />
 </androidx.constraintlayout.widget.ConstraintLayout>

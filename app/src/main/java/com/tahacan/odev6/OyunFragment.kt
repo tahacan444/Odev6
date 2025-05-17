@@ -28,6 +28,7 @@ class OyunFragment : Fragment() {
             resources.getIdentifier(oyun.resim,"drawable",requireContext().packageName)
         )
 
+        binding.textViewAd.text = "${oyun.ad}"
         return binding.root
 
     }

@@ -20,11 +20,11 @@ class AnasayfaFragment : Fragment() {
 
 
         val oyunListesi = ArrayList<Game>()
-        val g1 = Game(1,"Fifa","fifa")
-        val g2 = Game(2,"Minecraft","minecraft")
-        val g3 = Game(3,"Forza Horizon 5","fh5")
-        val g4 = Game(4,"Call Of Duty Black Ops","codbo")
-        val g5 = Game(5,"Call Of Duty Modern Warfare","codmw")
+        val g1 = Game(1,"Fifa","oyun1")
+        val g2 = Game(2,"Minecraft","oyun2")
+        val g3 = Game(3,"Forza Horizon 5","oyun3")
+        val g4 = Game(4,"Call Of Duty Black Ops","oyun4")
+        val g5 = Game(5,"Call Of Duty Modern Warfare","oyun5")
 
         oyunListesi.add(g1)
         oyunListesi.add(g2)
@@ -38,7 +38,7 @@ class AnasayfaFragment : Fragment() {
         val gameAdapter = GameAdapter(requireContext(),oyunListesi)
         binding.oyunlarRv.adapter = gameAdapter
 
-        binding.oyunlarRv.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+        binding.oyunlarRv.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.HORIZONTAL)
 
         return binding.root
     }

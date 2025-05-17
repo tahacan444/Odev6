@@ -25,6 +25,7 @@ class GameAdapter  (var mContext: Context, var oyunListesi: List<Game>)
     override fun onBindViewHolder(holder: CardTasarimTutucu, position: Int) {
         val oyun  = oyunListesi.get(position)
         val t = holder.tasarim
+        t.textViewOyun.text = "${oyun.ad}"
         t.imageViewOyun.setImageResource(
             mContext.resources.getIdentifier(oyun.resim,"drawable",mContext.packageName)
         )
